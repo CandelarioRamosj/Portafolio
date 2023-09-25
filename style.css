@@ -1,0 +1,44 @@
+:root {
+    --color1: #141827;
+    --color2: #62455b;
+    --color3: #736681;
+    --color4: #c1d9d0;
+    --color5: #fffae3;
+  }
+
+header {
+    background-color: var(--color1);
+    color: var(--color5);
+    display: flex;
+    
+}
+
+main {
+    background-color: var(--color2);
+    color: var(--color5);
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin-right: 0.2rem;
+}
+
+div {
+    height: 80vh;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color4);
+}
+
+.morado {
+    background-color: var(--color3);
+}
