@@ -1,9 +1,75 @@
 :root {
-    margin: 0;
-    padding: 0;
-    --color1: #141827;
-    --color2: #62455b;
-    --color3: #736681;
-    --color4: #c1d9d0;
-    --color5: #fffae3;
+  margin: 0;
+  padding: 0;
+  --color1: #141827;
+  --color2: #62455b;
+  --color3: #736681;
+  --color4: #c1d9d0;
+  --color5: #fffae3;
+  
+  color: var(--color5);
 }
+
+body {
+  background-color: var(--color1);
+  font-family: 'Work Sans', sans-serif;
+}
+
+/*Barra de navegacion*/
+header {
+  background-color: red;
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  background-color: aqua;
+  border-color: black;
+  border-style: solid;
+  display: inline;
+  margin-left: 3px;
+  margin-right: 3px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*Fin Barra de navegacion*/
+
+/*Seccion tecnologias*/
+.tecnologia {
+
+}
+
+.img-tecnologia {
+  height: 5vw;
+  width: 5vw;
+}
+/*Fin seccion tecnologias*/
+
+h2, h3, h4 {
+  font-family: 'Young Serif', serif;
+}
+
+/*Seccion proyectos*/
+.img-proyectos {
+  height: 15vw;
+  width: 35vw;
+}
+/*Fin seccion proyectos*/
+
+/*Seccion contacto*/
+.img-contacto {
+  height: 5vw;
+  width: 5vw;
+  border-color: red;
+  border-style: solid;
+}
+/*Fin seccioncontact*1
