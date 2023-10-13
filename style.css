@@ -1,10 +1,11 @@
 :root {
   --color1: #141827;
   --color2: #2c0323;
-  --color3: #736681;
+  --color3: #7583b4;
   --color4: #c1d9d0;
   --color5: #fffae3;
   color: var(--color5);
+  scroll-behavior: smooth;
 }
 
 * {
@@ -38,7 +39,8 @@ nav {
 }
 
 section {
-  scroll-margin-top: 10vw;
+  /*Scroll-margin-top, se utiliza para que al usar un enlace de la barra de navegacion se vea correctamente el elemento*/
+  scroll-margin-top: 5vw;
 }
 
 ul li {
@@ -56,7 +58,7 @@ li > a {
 
 a {
   text-decoration: none;
-  color: #fffae3;
+  color: var(--color5);
 }
 /*Fin Barra de navegacion*/
 /*Seccion inicio*/
@@ -70,7 +72,7 @@ a {
 #inicio-1 {
   flex: 50%;
   padding-left: 4vw;
-  margin-bottom: 20vw;
+  margin-bottom: 15vw;
 }
 
 #inicio-2 {
@@ -80,7 +82,7 @@ a {
   padding-right: 6vw;
   font-size: 1.2vw;
   line-height: 2vw;
-  margin-top: 10vw;
+  margin-top: 15vw;
 }
 
 h2 {
@@ -93,12 +95,100 @@ h4 {
 /*Fin Seccion inicio*/
 /*Seccion tecnologias*/
 .tecnologia {
+  height: 46vw;
+  display: grid;
+  place-content: center;
+}
 
+#text-tecnologia {
+  position: relative;
+  bottom: 10vw;
+  left: 45vw;
+  font-size: 3vw;
+  width: max-content;
+}
+
+.tec-contenedor {
+  height: 10vw;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-img {
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 1s linear 1s;
+}
+
+.img-contenedor {
+  display: grid;
+  place-content: center;
+  height: 9vw;
+  width: 7vw;
 }
 
 .img-tecnologia {
-  height: 5vw;
-  width: 5vw;
+  height: 5.5vw;
+  width: 5.5vw;
+  /*transition: -primer valor: elemento al que se aplica la transicion-, -segundo valor: el tiempo que tarda la transicion-, -tercer valor: la curva de velocida de la transicion-, -cuarto valor: el delay para que empiece la transicion-*/
+  transition: filter 1s linear 0.3s, height 0.3s linear 0.3s, width 0.3s linear 0.3s;
+}
+/*Transiciones a los elementos svg*/
+#HTML5:hover {
+  filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
+  height: 6.5vw;
+  width: 6.5vw;
+}
+#HTML5:hover + p {
+  opacity: 1;
+}
+
+#CSS3:hover {
+  filter: invert(33%) sepia(69%) saturate(1446%) hue-rotate(177deg) brightness(90%) contrast(104%);
+  height: 6.5vw;
+  width: 6.5vw;
+}
+#CSS3:hover + p {
+  opacity: 1;
+}
+
+#JS:hover {
+  filter: invert(65%) sepia(62%) saturate(566%) hue-rotate(356deg) brightness(94%) contrast(90%);
+  height: 6.5vw;
+  width: 6.5vw;
+}
+#JS:hover + p {
+  opacity: 1;
+}
+
+#Bootstrap:hover {
+  filter: invert(11%) sepia(100%) saturate(7239%) hue-rotate(269deg) brightness(95%) contrast(104%);
+  height: 6.5vw;
+  width: 6.5vw;
+}
+#Bootstrap:hover + p {
+  opacity: 1;
+}
+
+#Git:hover {
+  filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
+  height: 6.5vw;
+  width: 6.5vw;
+}
+#Git:hover + p {
+  opacity: 1;
+}
+
+#GitHub:hover {
+  filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
+  height: 6.5vw;
+  width: 6.5vw;
+}
+#GitHub:hover + p {
+  opacity: 1;
 }
 /*Fin seccion tecnologias*/
 
@@ -107,6 +197,13 @@ h2, h3, h4 {
 }
 
 /*Seccion proyectos*/
+.proyectos {
+  height: 46vw;
+  background-color: pink;
+  border-color: black;
+  border-style: solid;
+}
+
 .img-proyectos {
   height: 15vw;
   width: 35vw;
@@ -114,6 +211,13 @@ h2, h3, h4 {
 /*Fin seccion proyectos*/
 
 /*Seccion contacto*/
+.contacto {
+  height: 46vw;
+  background-color: aqua;
+  border-color: black;
+  border-style: solid;
+}
+
 .img-contacto {
   height: 5vw;
   width: 5vw;
