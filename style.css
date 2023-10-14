@@ -182,8 +182,12 @@ h4 {
   opacity: 1;
 }
 
+#GitHub {
+  filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
+}
+
 #GitHub:hover {
-  filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
+  filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
   height: 6.5vw;
   width: 6.5vw;
 }
@@ -199,14 +203,76 @@ h2, h3, h4 {
 /*Seccion proyectos*/
 .proyectos {
   height: 46vw;
-  background-color: pink;
-  border-color: black;
-  border-style: solid;
+}
+.contenedor-principal-proyectos{
+  display: grid;
+  grid-template-columns: 30vw 30vw;
+  margin-left: 5vw;
+}
+
+#text-proyecto {
+  position: relative;
+  top: 5vw;
+  left: 70vw;
+  font-size: 3vw;
+  width: max-content;
+}
+
+.proy-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  font-size: 1.3vw;
+}
+
+#proyect-contador {
+  margin-left: 15vw;
 }
 
 .img-proyectos {
-  height: 15vw;
-  width: 35vw;
+  border-radius: 5%;
+  height: 10vw;
+  width: 20vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  transition: filter 0.5s ease-in;
+}
+
+.img-proyectos:hover {
+  filter: opacity(30%);
+}
+
+.img-proyectos-enlaces {
+  height: 3vw;
+  width: 3vw;
+}
+
+.contenedor-enlaces-proyecto {
+  display: flex;
+  justify-content: space-between;
+  width: 8vw;
+  position: relative;
+  bottom: 8vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.img-proyectos:hover + .contenedor-enlaces-proyecto {
+  opacity: 1;
+}
+
+.contenedor-enlaces-proyecto:hover {
+  opacity: 1;
+}
+
+.contenedor-enlaces-proyecto > a > img {
+  filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
+}
+
+h5 {
+  margin-top: -4vw;
 }
 /*Fin seccion proyectos*/
 
