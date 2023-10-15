@@ -182,10 +182,6 @@ h4 {
   opacity: 1;
 }
 
-#Githb {
-  filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
-}
-
 #Github:hover {
   filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
   height: 6.5vw;
@@ -375,7 +371,7 @@ nav {
 
 section {
   /*Scroll-margin-top, se utiliza para que al usar un enlace de la barra de navegacion se vea correctamente el elemento*/
-  scroll-margin-top: 5vw;
+  scroll-margin-top: 12vw;
 }
 
 ul li {
@@ -517,16 +513,12 @@ h4 {
   opacity: 1;
 }
 
-#GitHub {
-  filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
-}
-
-#GitHub:hover {
+#Github:hover {
   filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
   height: 20vw;
   width: 20vw;
 }
-#GitHub:hover + p {
+#Github:hover + p {
   opacity: 1;
 }
 /*Fin seccion tecnologias*/
@@ -540,25 +532,21 @@ h2, h3, h4 {
   height: 90vh;
   display: grid;
   place-content: center;
-  border-color: rgb(0, 255, 98);
-  border-style: solid;
 }
 .contenedor-principal-proyectos{
   display: grid;
   grid-template-columns: auto auto;
   width: 80vw;
   height: 70vh;
-  border-color: rgb(210, 212, 63);
-  border-style: solid;
+  margin-left: 0;
 }
 
 #text-proyecto {
   position: relative;
- 
-  font-size: 3vw;
+  left: 47vw;
+  top: -3vw;
+  font-size: 6vw;
   width: max-content;
-  border-color: rgb(212, 93, 63);
-  border-style: solid;
 }
 
 .proy-contenedor {
@@ -566,14 +554,14 @@ h2, h3, h4 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 30vw;
-  font-size: 1.3vw;
-  border-color: rgb(63, 212, 75);
-  border-style: solid;
+  width: 40vw;
+  font-size: 3vw;
 }
 
 #proyect-contador {
-  
+  margin-left: 0;
+  position: relative;
+  left: 20vw;
 }
 
 .img-proyectos {
@@ -594,20 +582,18 @@ h2, h3, h4 {
 }
 
 .img-proyectos-enlaces {
-  height: 3vw;
-  width: 3vw;
+  height: 5vw;
+  width: 5vw;
 }
 
 .contenedor-enlaces-proyecto {
   display: flex;
   justify-content: space-between;
-  width: 8vw;
+  width: 15vw;
   position: relative;
-  bottom: 8vw;
+  bottom: 13vw;
   opacity: 0;
   transition: opacity 0.5s ease-in;
-  border-color: rgb(145, 63, 212);
-  border-style: solid;
 }
 
 .img-proyectos:hover + .contenedor-enlaces-proyecto {
@@ -629,7 +615,7 @@ h5 {
 
 /*Seccion contacto*/
 .contacto {
-  height: 46vw;
+  height: 90vh;
   display: grid;
   place-content: center;
   text-align: center;
@@ -637,9 +623,9 @@ h5 {
 
 #text-contacto {
   position: relative;
-  bottom: 6.5vw;
+  bottom: 25vw;
   left: 33vw;
-  font-size: 3vw;
+  font-size: 6vw;
   width: max-content;
 }
 
@@ -648,10 +634,11 @@ h5 {
   font-weight: bold;
   background-color: var(--color3);
   color: var(--color5);
-  margin-left: 8.5vw;
+  margin-left: 14vw;
   margin-bottom: 2vw;
-  width: 8vw;
-  height: 2.5vw;
+  width: 22vw;
+  height: 8vw;
+  font-size: 3vw;
   border-radius: 15px;
   border: none;
 }
@@ -664,14 +651,14 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 25vw;
-  margin-top: 1vw;
+  width: 50vw;
+  margin-top: 4vw;
   margin-bottom: 5vw;
 }
 
 .img-contacto {
-  height: 5vw;
-  width: 5vw;
+  height: 10vw;
+  width: 10vw;
   filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
 }
 
@@ -686,8 +673,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 5vw;
+  height: 10vw;
   font-style: italic;
+  font-size: 3vw;
 }
 /*fin footer*/
 }
