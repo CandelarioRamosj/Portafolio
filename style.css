@@ -332,3 +332,14 @@ h5 {
   filter: invert(34%) sepia(10%) saturate(1353%) hue-rotate(190deg) brightness(95%) contrast(99%);
 }
 /*Fin seccioncontact*1
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5vw;
+  font-style: italic;
+}
+/*fin footer*/
