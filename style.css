@@ -202,7 +202,7 @@ h4 {
 }
 
 #Github:hover {
-  filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(6deg) brightness(104%) contrast(108%);
   height: 6.5vw;
   width: 6.5vw;
 }
@@ -586,7 +586,7 @@ h4 {
 }
 
 #Github:hover {
-  filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(6deg) brightness(104%) contrast(108%);
   height: 20vw;
   width: 20vw;
 }
@@ -760,342 +760,342 @@ footer {
 /*landscape*/
 @media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
 
-  body {
-    background-color: var(--color1);
-    font-family: 'Work Sans', sans-serif;
-    /*Overscroll-behavior:none, evita que se pueda arrastrar la pantalla mas alla del limite*/
-    overscroll-behavior: none;
-  }
-  
-  /*Barra de navegacion*/
-  header {
-    font-family: 'Work Sans', sans-serif;
-    height: 12vh;
-  }
-  
-  nav {
-    background-color: var(--color1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*position:fixed, coloca el elemento fijo en pantalla*/
-    position: fixed;
-    width: 100%;
-    height: 12vh;
-    box-shadow: 2px 2px 5px var(--color1);
-  }
-  
-  section {
-    /*Scroll-margin-top, se utiliza para que al usar un enlace de la barra de navegacion se vea correctamente el elemento*/
-    scroll-margin-top: 9vw;
-  }
-  
-  ul li {
-    display: inline;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
-    list-style: none;
-  }
-  
-  li > a {
-    color: var(--color5);
-    font-weight: bold;
-    font-size: 2.5vw;
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--color5);
-  }
-  /*Fin Barra de navegacion*/
-  /*Seccion inicio*/
-  .inicio {
-    height: 88vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  
-  #inicio-1 {
-    flex: 50%;
-    padding-left: 4vw;
-    margin-bottom: 20vw;
-  }
-  
-  #inicio-2 {
-    flex: 50%;
-    padding-left: 3vw;
-    padding-right: 6vw;
-    font-size: 2vw;
-    line-height: 3vw;
-    margin-top: 15vw;
-  }
-  
-  h2 {
-    font-size: 5.5vw;
-  }
-  
-  h4 {
-    margin-top: 3vw;
-    font-size: 2.5vw;
-  }
-  /*Fin Seccion inicio*/
-  /*Seccion tecnologias*/
-  .tecnologia {
-    height: 88vh;
-    display: grid;
-    place-content: center;
-  }
-  
-  #text-tecnologia {
-    position: relative;
-    bottom: 12vw;
-    left: 55vw;
-    font-size: 4.5vw;
-    width: max-content;
-  }
-  
-  .tec-contenedor {
-    height: 20vw;
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .info-img {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2vw;
-    opacity: 0;
-    transition: opacity 1s linear 1s;
-  }
-  
-  .img-contenedor {
-    display: grid;
-    place-content: center;
-    height: 15vw;
-    width: 13vw;
-  }
-  
-  .img-tecnologia {
-    height: 9vw;
-    width: 9vw;
-    /*transition: -primer valor: elemento al que se aplica la transicion-, -segundo valor: el tiempo que tarda la transicion-, -tercer valor: la curva de velocida de la transicion-, -cuarto valor: el delay para que empiece la transicion-*/
-    transition: filter 1s linear 0.3s, height 0.3s linear 0.3s, width 0.3s linear 0.3s;
-  }
-  /*Transiciones a los elementos svg*/
-  #HTML5:hover {
-    filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
-    height: 11vw;
-    width: 11vw;
-  }
-  #HTML5:hover + p {
-    opacity: 1;
-  }
-  
-  #CSS3:hover {
-    filter: invert(33%) sepia(69%) saturate(1446%) hue-rotate(177deg) brightness(90%) contrast(104%);
-    height: 11vw;
-    width: 11vw;
-  }
-  #CSS3:hover + p {
-    opacity: 1;
-  }
-  
-  #JS:hover {
-    filter: invert(65%) sepia(62%) saturate(566%) hue-rotate(356deg) brightness(94%) contrast(90%);
-    height: 11vw;
-    width: 11vw;
-  }
-  #JS:hover + p {
-    opacity: 1;
-  }
-  
-  #Bootstrap:hover {
-    filter: invert(11%) sepia(100%) saturate(7239%) hue-rotate(269deg) brightness(95%) contrast(104%);
-    height: 11vw;
-    width: 11vw;
-  }
-  #Bootstrap:hover + p {
-    opacity: 1;
-  }
-  
-  #Git:hover {
-    filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
-    height: 11vw;
-    width: 11vw;
-  }
-  #Git:hover + p {
-    opacity: 1;
-  }
-  
-  #Github:hover {
-    filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
-    height: 11vw;
-    width: 11vw;
-  }
-  #Github:hover + p {
-    opacity: 1;
-  }
-  /*Fin seccion tecnologias*/
-  
-  h2, h3, h4 {
-    font-family: 'Young Serif', serif;
-  }
-  
-  /*Seccion proyectos*/
-  .proyectos {
-    height: 88vh;
-    display: grid;
-    place-content: center;
-  }
-  .contenedor-principal-proyectos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 0vw;
-    margin-right: 15vw;
-    width: 80vw;
-    height: 80vh;
-  }
-  
-  #text-proyecto {
-    position: relative;
-    top: 1vw;
-    left: 63vw;
-    font-size: 4.5vw;
-    width: max-content;
-  }
-  
-  .proy-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 40vw;
-    font-size: 2vw;
-  }
-  
-  #proyect-contador {
-    margin-left: 0vw;
-    position: relative;
-    left: 20vw;
-  }
-  
-  .img-proyectos {
-    border-radius: 5%;
-    height: 15vw;
-    width: 30vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    transition: filter 0.5s ease-in;
-  }
-  
-  .img-proyectos:hover {
-    filter: opacity(30%);
-  }
-  
-  .img-js-opacity {
-    filter: opacity(30%);
-  }
-  
-  .img-proyectos-enlaces {
-    height: 4vw;
-    width: 4vw;
-  }
-  
-  .contenedor-enlaces-proyecto {
-    display: flex;
-    justify-content: space-between;
-    width: 10vw;
-    position: relative;
-    bottom: 10vw;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-  }
-  
-  .img-proyectos:hover + .contenedor-enlaces-proyecto {
-    opacity: 1;
-  }
-  
-  .contenedor-enlaces-proyecto:hover {
-    opacity: 1;
-  }
-  
-  .contenedor-enlaces-proyecto > a > img {
-    filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
-  }
-  
-  h5 {
-    margin-top: -4vw;
-  }
-  /*Fin seccion proyectos*/
-  
-  /*Seccion contacto*/
-  .contacto {
-    height: 88vh;
-    display: grid;
-    place-content: center;
-    text-align: center;
-  }
-  
-  #text-contacto {
-    position: relative;
-    bottom: 6.5vw;
-    left: 35vw;
-    font-size: 4.5vw;
-    width: max-content;
-  }
-  
-  #button-cv {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    background-color: var(--color3);
-    color: var(--color5);
-    margin-left: 13vw;
-    margin-bottom: 2vw;
-    width: 13vw;
-    height: 5vw;
-    border-radius: 15px;
-    font-size: 2vw;
-    border: none;
-  }
-  
-  #button-cv:hover {
-    background-color: #4b5475;
-  }
-  
-  #contenedor-redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 40vw;
-    margin-top: 1vw;
-    margin-bottom: 5vw;
-  }
-  
-  .img-contacto {
-    height: 8vw;
-    width: 8vw;
-    filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
-  }
-  
-  .img-contacto:hover {
-    filter: invert(34%) sepia(10%) saturate(1353%) hue-rotate(190deg) brightness(95%) contrast(99%);
-  }
-  /*Fin seccioncontact*1
-  
-  /*footer*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 8vw;
-    font-size: 2vw;
-    font-style: italic;
-  }
-  /*fin footer*/
+body {
+  background-color: var(--color1);
+  font-family: 'Work Sans', sans-serif;
+  /*Overscroll-behavior:none, evita que se pueda arrastrar la pantalla mas alla del limite*/
+  overscroll-behavior: none;
+}
+
+/*Barra de navegacion*/
+header {
+  font-family: 'Work Sans', sans-serif;
+  height: 12vh;
+}
+
+nav {
+  background-color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*position:fixed, coloca el elemento fijo en pantalla*/
+  position: fixed;
+  width: 100%;
+  height: 12vh;
+  box-shadow: 2px 2px 5px var(--color1);
+}
+
+section {
+  /*Scroll-margin-top, se utiliza para que al usar un enlace de la barra de navegacion se vea correctamente el elemento*/
+  scroll-margin-top: 9vw;
+}
+
+ul li {
+  display: inline;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  list-style: none;
+}
+
+li > a {
+  color: var(--color5);
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color5);
+}
+/*Fin Barra de navegacion*/
+/*Seccion inicio*/
+.inicio {
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#inicio-1 {
+  flex: 50%;
+  padding-left: 4vw;
+  margin-bottom: 20vw;
+}
+
+#inicio-2 {
+  flex: 50%;
+  padding-left: 3vw;
+  padding-right: 6vw;
+  font-size: 2vw;
+  line-height: 3vw;
+  margin-top: 15vw;
+}
+
+h2 {
+  font-size: 5.5vw;
+}
+
+h4 {
+  margin-top: 3vw;
+  font-size: 2.5vw;
+}
+/*Fin Seccion inicio*/
+/*Seccion tecnologias*/
+.tecnologia {
+  height: 88vh;
+  display: grid;
+  place-content: center;
+}
+
+#text-tecnologia {
+  position: relative;
+  bottom: 12vw;
+  left: 55vw;
+  font-size: 4.5vw;
+  width: max-content;
+}
+
+.tec-contenedor {
+  height: 20vw;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-img {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2vw;
+  opacity: 0;
+  transition: opacity 1s linear 1s;
+}
+
+.img-contenedor {
+  display: grid;
+  place-content: center;
+  height: 15vw;
+  width: 13vw;
+}
+
+.img-tecnologia {
+  height: 9vw;
+  width: 9vw;
+  /*transition: -primer valor: elemento al que se aplica la transicion-, -segundo valor: el tiempo que tarda la transicion-, -tercer valor: la curva de velocida de la transicion-, -cuarto valor: el delay para que empiece la transicion-*/
+  transition: filter 1s linear 0.3s, height 0.3s linear 0.3s, width 0.3s linear 0.3s;
+}
+/*Transiciones a los elementos svg*/
+#HTML5:hover {
+  filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
+  height: 11vw;
+  width: 11vw;
+}
+#HTML5:hover + p {
+  opacity: 1;
+}
+
+#CSS3:hover {
+  filter: invert(33%) sepia(69%) saturate(1446%) hue-rotate(177deg) brightness(90%) contrast(104%);
+  height: 11vw;
+  width: 11vw;
+}
+#CSS3:hover + p {
+  opacity: 1;
+}
+
+#JS:hover {
+  filter: invert(65%) sepia(62%) saturate(566%) hue-rotate(356deg) brightness(94%) contrast(90%);
+  height: 11vw;
+  width: 11vw;
+}
+#JS:hover + p {
+  opacity: 1;
+}
+
+#Bootstrap:hover {
+  filter: invert(11%) sepia(100%) saturate(7239%) hue-rotate(269deg) brightness(95%) contrast(104%);
+  height: 11vw;
+  width: 11vw;
+}
+#Bootstrap:hover + p {
+  opacity: 1;
+}
+
+#Git:hover {
+  filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
+  height: 11vw;
+  width: 11vw;
+}
+#Git:hover + p {
+  opacity: 1;
+}
+
+#Github:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(6deg) brightness(104%) contrast(108%);
+  height: 11vw;
+  width: 11vw;
+}
+#Github:hover + p {
+  opacity: 1;
+}
+/*Fin seccion tecnologias*/
+
+h2, h3, h4 {
+  font-family: 'Young Serif', serif;
+}
+
+/*Seccion proyectos*/
+.proyectos {
+  height: 88vh;
+  display: grid;
+  place-content: center;
+}
+.contenedor-principal-proyectos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 0vw;
+  margin-right: 15vw;
+  width: 80vw;
+  height: 80vh;
+}
+
+#text-proyecto {
+  position: relative;
+  top: 1vw;
+  left: 63vw;
+  font-size: 4.5vw;
+  width: max-content;
+}
+
+.proy-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40vw;
+  font-size: 2vw;
+}
+
+#proyect-contador {
+  margin-left: 0vw;
+  position: relative;
+  left: 20vw;
+}
+
+.img-proyectos {
+  border-radius: 5%;
+  height: 15vw;
+  width: 30vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  transition: filter 0.5s ease-in;
+}
+
+.img-proyectos:hover {
+  filter: opacity(30%);
+}
+
+.img-js-opacity {
+  filter: opacity(30%);
+}
+
+.img-proyectos-enlaces {
+  height: 4vw;
+  width: 4vw;
+}
+
+.contenedor-enlaces-proyecto {
+  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+  position: relative;
+  bottom: 10vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.img-proyectos:hover + .contenedor-enlaces-proyecto {
+  opacity: 1;
+}
+
+.contenedor-enlaces-proyecto:hover {
+  opacity: 1;
+}
+
+.contenedor-enlaces-proyecto > a > img {
+  filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
+}
+
+h5 {
+  margin-top: -4vw;
+}
+/*Fin seccion proyectos*/
+
+/*Seccion contacto*/
+.contacto {
+  height: 88vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+#text-contacto {
+  position: relative;
+  bottom: 6.5vw;
+  left: 35vw;
+  font-size: 4.5vw;
+  width: max-content;
+}
+
+#button-cv {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  background-color: var(--color3);
+  color: var(--color5);
+  margin-left: 13vw;
+  margin-bottom: 2vw;
+  width: 13vw;
+  height: 5vw;
+  border-radius: 15px;
+  font-size: 2vw;
+  border: none;
+}
+
+#button-cv:hover {
+  background-color: #4b5475;
+}
+
+#contenedor-redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  margin-top: 1vw;
+  margin-bottom: 5vw;
+}
+
+.img-contacto {
+  height: 8vw;
+  width: 8vw;
+  filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
+}
+
+.img-contacto:hover {
+  filter: invert(34%) sepia(10%) saturate(1353%) hue-rotate(190deg) brightness(95%) contrast(99%);
+}
+/*Fin seccioncontact*1
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8vw;
+  font-size: 2vw;
+  font-style: italic;
+}
+/*fin footer*/
 }
 /*fin tablet*/
 /******************************************************************************************************/
@@ -1106,391 +1106,397 @@ footer {
 /*Default*/
 @media (max-width: 575.98px)and (orientation:portrait) {
 
-  body {
-    background-color: var(--color1);
-    font-family: 'Work Sans', sans-serif;
-    /*Overscroll-behavior:none, evita que se pueda arrastrar la pantalla mas alla del limite*/
-    overscroll-behavior: none;
-  }
-  
-  /*Barra de navegacion*/
-  header {
-    font-family: 'Work Sans', sans-serif;
-    height: 8vh;
-    z-index: 2;
-  }
-  
-  #button-bars {
-    height: 7vw;
-    width: 7vw;
-    background: none;
-    display: block;
-    margin-right: 7vw;
-    border: none;
-  }
-  
-  #button-bars:hover {
-    filter: invert(73%) sepia(48%) saturate(391%) hue-rotate(195deg) brightness(98%) contrast(95%);
-  }
-  
-  #img-bars {
-    height: 7vw;
-    width: 7vw;
-  }
-  
-  nav {
-    background-color: var(--color1);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    /*position:fixed, coloca el elemento fijo en pantalla*/
-    position: fixed;
-    width: 100%;
-    height: 8vh;
-    box-shadow: 2px 2px 5px var(--color1);
-    z-index: 2;
-  }
-  
-  section {
-    /*Scroll-margin-top, se utiliza para que al usar un enlace de la barra de navegacion se vea correctamente el elemento*/
-    scroll-margin-top: 12vw;
-  }
-  
-  ul {
-    background-color: var(--color1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    left: 100%;
-    top: 8vh;
-    width: 100%;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    height: 30vh;
-    transition: left 0.3s linear;
-    box-shadow: 2px 2px 5px var(--color5);
-    z-index: 2;
-  }
-  
-  .invisible-ul {
-    left: 0;
-  }
-  
-  ul li {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  li > a {
-    color: var(--color5);
-    font-weight: bold;
-    font-size: 4vw;
-    line-height: 10vw;
-  }
-  
-  li > a:hover {
-    color: #b3c1f5;
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--color5);
-  }
-  /*Fin Barra de navegacion*/
-  /*Seccion inicio*/
-  .inicio {
-    height: 90vh;
-    display: block;
-    text-align: center;
-  }
-  
-  #inicio-1 {
-    display: grid;
-    place-content: center;
-    height: 50%;
-  }
-  
-  #inicio-2 {
-    margin-top: -15.5vw;
-    display: grid;
-    place-content: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    height: 50%;
-    font-size: 3.5vw;
-    line-height: 4.5vw;
-  }
-  
-  h2 {
-    font-size: 9vw;
-  }
-  
-  h4 {
-    margin-top: 5vw;
-    font-size: 4vw;
-  }
-  /*Fin Seccion inicio*/
-  /*Seccion tecnologias*/
-  .tecnologia {
-    height: 90vh;
-    display: grid;
-  }
-  
-  #text-tecnologia {
-    position: relative;
-    bottom: 5vw;
-    left: 35vw;
-    font-size: 6vw;
-    width: max-content;
-    z-index: 1;
-  }
-  
-  .tec-contenedor {
-    height: 70vh;
-    width: 60vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .info-img {
-    text-align: center;
-    font-weight: bold;
-    font-size: 3vw;
-    opacity: 0;
-    transition: opacity 1s linear 1s;
-  }
-  
-  .img-contenedor {
-    display: grid;
-    place-content: center;
-    height: 25vw;
-    width: 29vw;
-  }
-  
-  .img-tecnologia {
-    height: 15vw;
-    width: 15vw;
-    /*transition: -primer valor: elemento al que se aplica la transicion-, -segundo valor: el tiempo que tarda la transicion-, -tercer valor: la curva de velocida de la transicion-, -cuarto valor: el delay para que empiece la transicion-*/
-    transition: filter 1s linear 0.3s, height 0.3s linear 0.3s, width 0.3s linear 0.3s;
-  }
-  /*Transiciones a los elementos svg*/
-  #HTML5:hover {
-    filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
-    height: 20vw;
-    width: 20vw;
-  }
-  #HTML5:hover + p {
-    opacity: 1;
-  }
-  
-  #CSS3:hover {
-    filter: invert(33%) sepia(69%) saturate(1446%) hue-rotate(177deg) brightness(90%) contrast(104%);
-    height: 20vw;
-    width: 20vw;
-  }
-  #CSS3:hover + p {
-    opacity: 1;
-  }
-  
-  #JS:hover {
-    filter: invert(65%) sepia(62%) saturate(566%) hue-rotate(356deg) brightness(94%) contrast(90%);
-    height: 20vw;
-    width: 20vw;
-  }
-  #JS:hover + p {
-    opacity: 1;
-  }
-  
-  #Bootstrap:hover {
-    filter: invert(11%) sepia(100%) saturate(7239%) hue-rotate(269deg) brightness(95%) contrast(104%);
-    height: 20vw;
-    width: 20vw;
-  }
-  #Bootstrap:hover + p {
-    opacity: 1;
-  }
-  
-  #Git:hover {
-    filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
-    height: 20vw;
-    width: 20vw;
-  }
-  #Git:hover + p {
-    opacity: 1;
-  }
-  
-  #Github:hover {
-    filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
-    height: 20vw;
-    width: 20vw;
-  }
-  #Github:hover + p {
-    opacity: 1;
-  }
-  /*Fin seccion tecnologias*/
-  
-  h2, h3, h4 {
-    font-family: 'Young Serif', serif;
-  }
-  
-  /*Seccion proyectos*/
-  .proyectos {
-    height: 90vh;
-    display: grid;
-    place-content: center;
-  }
-  .contenedor-principal-proyectos{
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 80vw;
-    height: 70vh;
-    margin-left: 0;
-  }
-  
-  #text-proyecto {
-    position: relative;
-    left: 47vw;
-    top: -3vw;
-    font-size: 6vw;
-    width: max-content;
-    z-index: 1;
-  }
-  
-  .proy-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 40vw;
-    font-size: 3vw;
-  }
-  
-  #proyect-contador {
-    margin-left: 0;
-    position: relative;
-    left: 20vw;
-    z-index: 1;
-  }
-  
-  .img-proyectos {
-    border-radius: 5%;
-    height: 20vw;
-    width: 35vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    transition: filter 0.5s ease-in;
-  }
-  
-  .img-proyectos:hover {
-    filter: opacity(30%);
-  }
-  
-  .img-js-opacity {
-    filter: opacity(30%);
-  }
-  
-  .img-proyectos-enlaces {
-    height: 5vw;
-    width: 5vw;
-  }
-  
-  .contenedor-enlaces-proyecto {
-    display: flex;
-    justify-content: space-between;
-    width: 15vw;
-    position: relative;
-    bottom: 13vw;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-  }
-  
-  .img-proyectos:hover + .contenedor-enlaces-proyecto {
-    opacity: 1;
-  }
-  
-  .contenedor-enlaces-proyecto:hover {
-    opacity: 1;
-  }
-  
-  .contenedor-enlaces-proyecto > a > img {
-    filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
-  }
-  
-  h5 {
-    margin-top: -4vw;
-  }
-  /*Fin seccion proyectos*/
-  
-  /*Seccion contacto*/
-  .contacto {
-    height: 90vh;
-    display: grid;
-    place-content: center;
-    text-align: center;
-  }
-  
-  #text-contacto {
-    position: relative;
-    bottom: 25vw;
-    left: 33vw;
-    font-size: 6vw;
-    width: max-content;
-    z-index: 1;
-  }
-  
-  #button-cv {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    background-color: var(--color3);
-    color: var(--color5);
-    margin-left: 14vw;
-    margin-bottom: 2vw;
-    width: 22vw;
-    height: 8vw;
-    font-size: 3vw;
-    border-radius: 15px;
-    border: none;
-  }
-  
-  #button-cv:hover {
-    background-color: #4b5475;
-  }
-  
-  #contenedor-redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50vw;
-    margin-top: 4vw;
-    margin-bottom: 5vw;
-  }
-  
-  .img-contacto {
-    height: 10vw;
-    width: 10vw;
-    filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
-  }
-  
-  .img-contacto:hover {
-    filter: invert(34%) sepia(10%) saturate(1353%) hue-rotate(190deg) brightness(95%) contrast(99%);
-  }
-  /*Fin seccioncontact*1
-  
-  /*footer*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 10vw;
-    font-style: italic;
-    font-size: 3vw;
-  }
-  /*fin footer*/
+body {
+  background-color: var(--color1);
+  font-family: 'Work Sans', sans-serif;
+  /*Overscroll-behavior:none, evita que se pueda arrastrar la pantalla mas alla del limite*/
+  overscroll-behavior: none;
+}
+
+/*Barra de navegacion*/
+header {
+  font-family: 'Work Sans', sans-serif;
+  height: 10vh;
+  z-index: 2;
+}
+
+#button-bars {
+  height: 15vw;
+  width: 15vw;
+  background: none;
+  display: block;
+  margin-right: 7vw;
+  border: none;
+}
+
+#button-bars:hover {
+  filter: invert(73%) sepia(48%) saturate(391%) hue-rotate(195deg) brightness(98%) contrast(95%);
+}
+
+#img-bars {
+  height: 15vw;
+  width: 15vw;
+}
+
+nav {
+  background-color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /*position:fixed, coloca el elemento fijo en pantalla*/
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  box-shadow: 2px 2px 5px var(--color1);
+  z-index: 2;
+}
+
+section {
+  /*Scroll-margin-top, se utiliza para que al usar un enlace de la barra de navegacion se vea correctamente el elemento*/
+  scroll-margin-top: 10vh;
+}
+
+ul {
+  background-color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 100%;
+  top: 10vh;
+  width: 100%;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  height: 90vh;
+  transition: left 0.3s linear;
+  box-shadow: 2px 2px 5px var(--color5);
+  z-index: 2;
+}
+
+.invisible-ul {
+  left: 0;
+}
+
+ul li {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li > a {
+  color: var(--color5);
+  font-weight: bold;
+  font-size: 12vw;
+  line-height: 25vw;
+}
+
+li > a:hover {
+  color: #b3c1f5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color5);
+}
+/*Fin Barra de navegacion*/
+/*Seccion inicio*/
+.inicio {
+  height: 90vh;
+  display: block;
+  text-align: center;
+}
+
+#inicio-1 {
+  display: grid;
+  place-content: center;
+  height: 50%;
+}
+
+#inicio-2 {
+  margin-top: -15.5vw;
+  display: grid;
+  place-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 50%;
+  font-size: 4.5vw;
+  font-weight: bold;
+  line-height: 7vw;
+}
+
+h2 {
+  font-size: 13vw;
+}
+
+h4 {
+  margin-top: 5vw;
+  font-size: 5vw;
+}
+/*Fin Seccion inicio*/
+/*Seccion tecnologias*/
+.tecnologia {
+  height: 90vh;
+  display: grid;
+
+}
+
+#text-tecnologia {
+  position: relative;
+  bottom: 5vw;
+  left: 23vw;
+  font-size: 10vw;
+  width: max-content;
+  z-index: 1;
+}
+
+.tec-contenedor {
+  height: 70vh;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.info-img {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5vw;
+  opacity: 0;
+  transition: opacity 1s linear 1s;
+}
+
+.img-contenedor {
+  display: grid;
+  place-content: center;
+  height: 35vw;
+  width: 40vw;
+}
+
+.img-tecnologia {
+  height: 25vw;
+  width: 25vw;
+  /*transition: -primer valor: elemento al que se aplica la transicion-, -segundo valor: el tiempo que tarda la transicion-, -tercer valor: la curva de velocida de la transicion-, -cuarto valor: el delay para que empiece la transicion-*/
+  transition: filter 1s linear 0.3s, height 0.3s linear 0.3s, width 0.3s linear 0.3s;
+}
+/*Transiciones a los elementos svg*/
+#HTML5:hover {
+  filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
+  height: 30vw;
+  width: 30vw;
+}
+#HTML5:hover + p {
+  opacity: 1;
+}
+
+#CSS3:hover {
+  filter: invert(33%) sepia(69%) saturate(1446%) hue-rotate(177deg) brightness(90%) contrast(104%);
+  height: 30vw;
+  width: 30vw;
+}
+#CSS3:hover + p {
+  opacity: 1;
+}
+
+#JS:hover {
+  filter: invert(65%) sepia(62%) saturate(566%) hue-rotate(356deg) brightness(94%) contrast(90%);
+  height: 30vw;
+  width: 30vw;
+}
+#JS:hover + p {
+  opacity: 1;
+}
+
+#Bootstrap:hover {
+  filter: invert(11%) sepia(100%) saturate(7239%) hue-rotate(269deg) brightness(95%) contrast(104%);
+  height: 30vw;
+  width: 30vw;
+}
+#Bootstrap:hover + p {
+  opacity: 1;
+}
+
+#Git:hover {
+  filter: invert(39%) sepia(54%) saturate(2476%) hue-rotate(347deg) brightness(103%) contrast(99%);
+  height: 30vw;
+  width: 30vw;
+}
+#Git:hover + p {
+  opacity: 1;
+}
+
+#Github:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(6deg) brightness(104%) contrast(108%);
+  height: 30vw;
+  width: 30vw;
+}
+#Github:hover + p {
+  opacity: 1;
+}
+/*Fin seccion tecnologias*/
+
+h2, h3, h4 {
+  font-family: 'Young Serif', serif;
+}
+
+/*Seccion proyectos*/
+.proyectos {
+  height: 90vh;
+  display: grid;
+  place-content: center;
+}
+.contenedor-principal-proyectos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  height: 70vh;
+  margin-left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#text-proyecto {
+  position: relative;
+  left: 25vw;
+  top: -4vw;
+  font-size: 10vw;
+  width: max-content;
+  z-index: 1;
+}
+
+.proy-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+  font-size: 3vw;
+}
+
+#proyect-contador {
+  margin-left: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.img-proyectos {
+  border-radius: 5%;
+  height: 40vw;
+  width: 70vw;
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  transition: filter 0.5s ease-in;
+}
+
+.img-proyectos:hover {
+  filter: opacity(30%);
+}
+
+.img-js-opacity {
+  filter: opacity(30%);
+}
+
+.img-proyectos-enlaces {
+  height: 15vw;
+  width: 15vw;
+}
+
+.contenedor-enlaces-proyecto {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  position: relative;
+  bottom: 27vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.img-proyectos:hover + .contenedor-enlaces-proyecto {
+  opacity: 1;
+}
+
+.contenedor-enlaces-proyecto:hover {
+  opacity: 1;
+}
+
+.contenedor-enlaces-proyecto > a > img {
+  filter: invert(90%) sepia(7%) saturate(1087%) hue-rotate(331deg) brightness(110%) contrast(104%);
+}
+
+h5 {
+  margin-top: -15vw;
+  font-size: 5vw;
+}
+/*Fin seccion proyectos*/
+
+/*Seccion contacto*/
+.contacto {
+  height: 90vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+#text-contacto {
+  position: relative;
+  bottom: 40vw;
+  left: 25vw;
+  font-size: 10vw;
+  width: max-content;
+  z-index: 1;
+}
+
+#button-cv {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  background-color: var(--color3);
+  color: var(--color5);
+  margin-left: 21vw;
+  margin-bottom: 2vw;
+  width: 35vw;
+  height: 15vw;
+  font-size: 5vw;
+  border-radius: 15px;
+  border: none;
+}
+
+#button-cv:hover {
+  background-color: #4b5475;
+}
+
+#contenedor-redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  margin-top: 4vw;
+  margin-bottom: 5vw;
+}
+
+.img-contacto {
+  height: 20vw;
+  width: 20vw;
+  filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
+}
+
+.img-contacto:hover {
+  filter: invert(34%) sepia(10%) saturate(1353%) hue-rotate(190deg) brightness(95%) contrast(99%);
+}
+/*Fin seccioncontact*1
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vw;
+  font-style: italic;
+  font-size: 5vw;
+}
+/*fin footer*/
 }
 /******************************************************************************************************/
 /******************************************************************************************************/
