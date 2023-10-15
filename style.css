@@ -283,15 +283,52 @@ h5 {
 /*Seccion contacto*/
 .contacto {
   height: 46vw;
-  background-color: aqua;
-  border-color: black;
-  border-style: solid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+#text-contacto {
+  position: relative;
+  bottom: 6.5vw;
+  left: 33vw;
+  font-size: 3vw;
+  width: max-content;
+}
+
+#button-cv {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  background-color: var(--color3);
+  color: var(--color5);
+  margin-left: 8.5vw;
+  margin-bottom: 2vw;
+  width: 8vw;
+  height: 2.5vw;
+  border-radius: 15px;
+  border: none;
+}
+
+#button-cv:hover {
+  background-color: #4b5475;
+}
+
+#contenedor-redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25vw;
+  margin-top: 1vw;
+  margin-bottom: 5vw;
 }
 
 .img-contacto {
   height: 5vw;
   width: 5vw;
-  border-color: red;
-  border-style: solid;
+  filter: invert(52%) sepia(59%) saturate(273%) hue-rotate(189deg) brightness(89%) contrast(85%);
+}
+
+.img-contacto:hover {
+  filter: invert(34%) sepia(10%) saturate(1353%) hue-rotate(190deg) brightness(95%) contrast(99%);
 }
 /*Fin seccioncontact*1
